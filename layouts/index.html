@@ -77,7 +77,7 @@
         <h2 class="text-mnblue font-extrabold lg:text-5xl">¿Qué son los <span class="text-pink">mitos</span>?</h2>
         <p class="mt-6">Al hablar de métodos de anticoncepción, los mitos son ideas falsas o distorsionadas sobre la eficacia de estos métodos, sus efectos secundarios y la efectividad de métodos caseros de anticoncepción o de interrupción del embarazo. Estos son algunos mitos que se han identificado y la respuesta a cada uno de ellos:</p>
       </div>
-      <!-- Carrusel -->
+      {{ partial "myth.html" . }}
     </div>
     <!---->
     <div class="mt-24">
@@ -117,4 +117,14 @@
     </div>
   </div>
 </div>
+{{ end }}
+
+{{ define "head" }}
+  <link rel="stylesheet" href="{{"vendors/swiper/swiper.min.css"|absURL}}">
+{{ end }}
+
+{{ define "scripts" }}
+  {{ $home := resources.Get "js/home.js" | minify }}
+  <script src="{{"vendors/swiper/swiper.min.js"|absURL}}"></script>
+  <script src="{{$home.Permalink}}"></script>
 {{ end }}

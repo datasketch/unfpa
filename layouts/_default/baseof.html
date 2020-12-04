@@ -10,6 +10,7 @@
     {{ else }}
       <title>{{ .Site.Title }}</title>
     {{ end }}
+    {{ block "head" . }}{{ end }}
   </head>
   <body class="font-open text-onyx">
     {{ partial "navbar.html" . }}
@@ -17,5 +18,6 @@
       {{ block "main" . }} {{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ block "scripts" . }}{{ end }}
   </body>
 </html>
