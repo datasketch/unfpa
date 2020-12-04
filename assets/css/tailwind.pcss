@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Neue Haas Grotesk';
+    font-weight: 400;
+    src: url(/fonts/NHaasGroteskTXPro-55Rg.ttf);
+  }
+  @font-face {
+    font-family: 'Neue Haas Grotesk';
+    font-weight: 700;
+    src: url(/fonts/NHaasGroteskTXPro-75Bd.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url(/fonts/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: url(/fonts/OpenSans-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    src: url(/fonts/OpenSans-ExtraBold.ttf);
+  }
+}
+
+@layer components {
+  #how-to li {
+    background-image: url(/icons/lightning.svg);
+    @apply bg-left-top bg-no-repeat pl-10;
+  }
+}
