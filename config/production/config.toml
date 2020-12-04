@@ -1,5 +1,6 @@
-baseURL = "https://unfpa.netlify.app/"
+baseURL = "https://datasketch.github.io/unfpa"
 languageCode = "es-es"
 title = "UNFPA"
 taxonomies = []
+publishDir = "docs"
 
