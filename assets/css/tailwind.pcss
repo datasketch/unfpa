@@ -31,6 +31,12 @@
 }
 
 @layer components {
+  .dropdown-content {
+    @apply absolute left-0 w-full bg-white text-center shadow text-sm flex flex-col z-10 font-bold hidden top-0;
+  }
+  .dropdown:hover .dropdown-content {
+    @apply block;
+  }
   #how-to li {
     background-image: url(../icons/lightning.svg);
     @apply bg-left-top bg-no-repeat pl-10;

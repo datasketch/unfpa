@@ -1,1 +1,51 @@
-<nav></nav>
+<nav class="bg-cultured px-4 py-4 z-20 flex justify-between items-center">
+  <!---->
+  <div class="w-full flex items-center justify-between lg:w-auto">
+    <a href="{{ .Site.BaseURL }}" class="flex items-baseline space-x-3">
+      <img class="w-32" src="{{"images/taboo.png"|absURL}}" alt="">
+      <img src="{{"images/unfpa.svg"|absURL}}" alt="">
+    </a>
+    <button class="lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+    </button>
+  </div>
+  <div class="hidden font-bold lg:flex lg:flex-row">
+    <a href="" class="py-2 px-6 hover:text-pink">Inicio</a>
+    <a href="" class="py-2 px-6 hover:text-pink">Sobre el proyecto</a>
+    <a href="" class="py-2 px-6 hover:text-pink">Datos en redes</a>
+    <div class="py-2 px-6 relative dropdown cursor-pointer">
+      Temas y mitos
+      <div class="dropdown-content">
+        <label class="text-pink text-base py-2 cursor-pointer block">Temas y mitos</label>
+        <div class="px-2 py-2 hover:bg-pink hover:text-white">
+          <a href="">El perejil y el aborto</a>
+        </div>
+        <div class="px-2 py-2 hover:bg-pink hover:text-white">
+          <a href="">Las ITS y el sexo oral</a>
+        </div>
+        <div class="px-2 py-2 hover:bg-pink hover:text-white">
+          <a href="">Tema pendiente</a>
+        </div>
+        <div class="px-2 py-2 hover:bg-pink hover:text-white">
+          <a href="">Tema pendiente</a>
+        </div>
+      </div>
+    </div>
+    <div class="pl-6 flex space-x-2 items-center">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="{{"icons/fb.svg"|absURL}}" alt="">
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="{{"icons/tw.svg"|absURL}}" alt="">
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="{{"icons/ig.svg"|absURL}}" alt="">
+      </a>
+    </div>
+  </div>
+</nav>
