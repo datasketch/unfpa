@@ -12,7 +12,25 @@
   </div>
 </div>
 <!---->
-<div class="flex flex-col text-white md:flex-row">
+<div class="bg-cultured px-4 py-24">
+  <div class="w-full mx-auto lg:w-10/12">
+    {{ partial "explorer.html" . }}
+    <div class="mt-24">
+      <div class="md:max-w-xl lg:max-w-3xl">
+        <h2 class="text-mnblue text-3xl font-extrabold lg:text-5xl">
+          ¿Por qué aquí hablamos de explorar <span class="text-pink">temas</span> y no <span class="text-pink">mitos</span>?
+        </h2>
+        <p class="mt-6">
+          La principal fuente de información a explorar en esta página son las publicaciones en Twitter que contienen palabras que hemos identificado como relevantes y recurrentes en las conversaciones sobre mitos de anticoncepción. Sin embargo, algunas publicaciones con estos mismos términos tratan de desmentir estas ideas falsas, no de diseminarlas. La naturaleza de las redes sociales hace que no podemos asegurar que todos los tweets se refieran a estos mitos o quieran difundirlos, es por eso que en las herramientas de exploración de datos nos estaremos refiriendo a los temas asociados a mitos de anticoncepción y no a los mitos en sí.
+        </p>
+      </div>
+      <a href="" class="mt-6 inline-block bg-pink text-white text-lg font-bold px-3 py-1 rounded text-xl">Ir a la metodología</a>
+    </div>
+  </div>
+</div>
+<!---->
+<div class="flex flex-col text-white md:flex-row md:flex-wrap">
+  <!-- 1 -->
   <div class="py-12 lg:w-1/2 text-center bg-mnblue">
     <div class="max-w-md mx-auto px-4">
       <h2 class="font-extrabold text-2xl leading-tight lg:text-4xl">
@@ -24,6 +42,7 @@
       </p>
     </div>
   </div>
+  <!-- 2 -->
   <div class="py-12 lg:w-1/2 text-center bg-pink">
     <div class="max-w-md mx-auto px-4">
       <h2 class="font-extrabold text-2xl leading-tight lg:text-4xl">
@@ -32,6 +51,30 @@
       <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
       <p class="text-center mt-6">
         <a href="" class="inline-block bg-white text-pink text-lg font-bold px-3 py-1 rounded lg:text-xl">Explorar</a>
+      </p>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="py-12 lg:w-1/2 text-center bg-purple">
+    <div class="max-w-md mx-auto px-4">
+      <h2 class="font-extrabold text-2xl leading-tight lg:text-4xl">
+        Conoce la historia <br>de este proyecto
+      </h2>
+      <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <p class="text-center mt-6">
+        <a href="" class="inline-block bg-white text-pink text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
+      </p>
+    </div>
+  </div>
+  <!-- 4 -->
+  <div class="py-12 lg:w-1/2 text-center bg-max-purple">
+    <div class="max-w-md mx-auto px-4">
+      <h2 class="font-extrabold text-2xl leading-tight lg:text-4xl">
+        Conoce la <br>metodología
+      </h2>
+      <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <p class="text-center mt-6">
+        <a href="" class="inline-block bg-white text-pink text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
       </p>
     </div>
   </div>
@@ -46,7 +89,30 @@
     </div>
     <!---->
     <div class="mt-24">
-      {{ partial "explorer.html" . }}
+      <div class="md:max-w-xl lg:max-w-3xl">
+        <h2 class="text-mnblue text-3xl font-extrabold lg:text-5xl">¿Qué son los <span class="text-pink">mitos</span>?</h2>
+        <p class="mt-6">Al hablar de métodos de anticoncepción, los mitos son ideas falsas o distorsionadas sobre la eficacia de estos métodos, sus efectos secundarios y la efectividad de métodos caseros de anticoncepción o de interrupción del embarazo. Estos son algunos mitos que se han identificado y la respuesta a cada uno de ellos:</p>
+      </div>
+      {{ partial "myth.html" . }}
+    </div>
+    <!---->
+    <div class="mt-24">
+      <div class="md:max-w-xl lg:max-w-3xl">
+        <h2 class="text-mnblue text-3xl font-extrabold lg:text-5xl">¿Dónde obtener <span class="text-pink">insumos de apoyo</span>?</h2>
+      </div>
+      <div class="flex flex-col space-y-12 md:space-y-0 md:space-x-6 lg:space-x-12 md:flex-row md:items-center">
+        <div class="w-full md:w-3/5">
+          <div class="max-w-lg">
+            <p class="mt-6">
+              Son aquellos mecanismos (medicamentos, dispositivos o procedimientos) utilizados para evitar que después de una relación sexual se presente un embarazo. Las mujeres pueden elegir entre muchos tipos diferentes de anticonceptivos; algunos funcionan mejor que otros para prevenir el embarazo. Los hombres pueden usar el preservativo que además previene de ITS y VIH. Para conocer los principales anticonceptivos ofrecidos y avalados por los servicios de salud en Colombia, puedes consultar las tarjetas para asesoría anticonceptiva en Colombia disponibles en las publicaciones de UNFPA.
+            </p>
+            <a href="" class="inline-block mt-6 bg-pink text-white text-lg font-bold px-3 py-1 rounded lg:text-xl">Consultar</a>
+          </div>
+        </div>
+        <div class="w-full md:w-2/5">
+          <img src="{{"images/anticonceptivos.svg"|absURL}}" alt="">
+        </div>
+      </div>
     </div>
     <!---->
     <div class="flex flex-col mt-24 space-y-12 md:space-y-0 md:space-x-6 lg:space-x-24 md:flex-row">
@@ -61,26 +127,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <!---->
-    <div class="mt-24">
-      <div class="md:max-w-xl lg:max-w-3xl">
-        <h2 class="text-mnblue text-3xl font-extrabold lg:text-5xl">¿Qué son los <span class="text-pink">métodos anticonceptivos</span> modernos?</h2>
-        <p class="mt-6">Son aquellos mecanismos (medicamentos, dispositivos o procedimientos) utilizados para evitar que después de una relación sexual se presente un embarazo. Las mujeres pueden elegir entre muchos tipos diferentes de anticonceptivos; algunos funcionan mejor que otros para prevenir el embarazo. Los hombres pueden usar el preservativo que además previene de ITS y VIH. Estos son los principales anticonceptivos ofrecidos y avalados por los servicios de salud en Colombia:</p>
-      </div>
-      <div class="mt-8 grid gap-8 lg:grid-cols-2">
-        <img src="{{"images/asesoria-anticonceptiva.png"|absURL}}" alt="">
-        <img src="{{"images/consideraciones-y-beneficios.png"|absURL}}" alt="">
-      </div>
-      <a href="" class="mt-6 inline-block bg-pink text-white text-lg font-bold px-3 py-1 rounded text-xl">Descargar</a>
-    </div>
-    <!---->
-    <div class="mt-24">
-      <div class="md:max-w-xl lg:max-w-3xl">
-        <h2 class="text-mnblue text-3xl font-extrabold lg:text-5xl">¿Qué son los <span class="text-pink">mitos</span>?</h2>
-        <p class="mt-6">Al hablar de métodos de anticoncepción, los mitos son ideas falsas o distorsionadas sobre la eficacia de estos métodos, sus efectos secundarios y la efectividad de métodos caseros de anticoncepción o de interrupción del embarazo. Estos son algunos mitos que se han identificado y la respuesta a cada uno de ellos:</p>
-      </div>
-      {{ partial "myth.html" . }}
     </div>
     <!---->
     <div class="mt-24">
@@ -117,6 +163,20 @@
         <p class="mt-6">Si requieres información sobre métodos anticonceptivos específicos, sobre cómo metodologías de educación sexual o sobre cifras del estado de los derechos sexuales y reproductivos en América Latina, puedes revisar las publicaciones de UNFPA.</p>
         <a href="" class="mt-6 inline-block bg-pink text-white text-lg font-bold px-3 py-1 rounded lg:text-xl">Ir a UNFPA</a>
       </div>
+    </div>
+  </div>
+</div>
+<!---->
+<div class="bg-purple px-4 py-24">
+  <div class="w-full mx-auto lg:w-10/12">
+    <div class="text-white md:max-w-xl lg:max-w-3xl">
+      <h2 class="text-3xl font-extrabold lg:text-5xl">
+        ¿Tienes algún comentario o sugerencia?
+      </h2>
+      <p class="mt-6">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      </p>
+      <a href="" class="mt-6 inline-block bg-white text-purple text-lg font-bold px-3 py-1 rounded lg:text-xl">Ir al formulario</a>
     </div>
   </div>
 </div>
