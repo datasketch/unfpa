@@ -3,7 +3,7 @@ title: Explorador de temas
 type: app
 subtitle: Temas asociados a mitos
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-app: ""
+app: https://datasketch.shinyapps.io/unfpa-mitos-salud-sexual/
 weight: 2
 ---
 
