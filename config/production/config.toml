@@ -1,4 +1,4 @@
-baseURL = "https://datasketch.github.io/unfpa"
+baseURL = "https://datasketch.github.io/unfpa/"
 languageCode = "es-es"
 title = "UNFPA"
 taxonomies = []
