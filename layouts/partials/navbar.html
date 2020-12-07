@@ -15,10 +15,8 @@
     </button>
   </div>
   <div class="hidden font-bold lg:flex lg:flex-row lg:space-x-6">
-    <a href="" class="hover:text-pink">Inicio</a>
-    <a href="" class="hover:text-pink">Explorador de temas</a>
-    <a href="" class="hover:text-pink">Explorador de tweets</a>
-    <a href="" class="hover:text-pink">Sobre el proyecto</a>
-    <a href="" class="hover:text-pink">Metodología</a>
+    {{ range .Site.Pages }}
+      <a href="{{.Permalink}}" class="hover:text-pink">{{.Title}}</a>
+    {{ end }}
   </div>
 </nav>

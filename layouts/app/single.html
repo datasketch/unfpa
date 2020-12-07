@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="px-4 py-12">
+  <h1 class="text-mnblue text-3xl font-extrabold lg:text-5xl text-center">
+    <span class="text-xl lg:text-3xl font-bold">Explorador de</span>
+    <span class="block">{{ .Params.subtitle }}</span>
+  </h1>
+  <div class="max-w-lg text-center mx-auto mt-6">{{.Description}}</div>
+  <div class="h-screen mt-4">
+    <iframe class="w-full h-full" src="{{.Params.app}}" frameborder="0"></iframe>
+  </div>
+</div>
+{{ end }}
