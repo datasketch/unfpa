@@ -31,6 +31,18 @@
 }
 
 @layer components {
+  details {
+    @apply relative;
+  }
+  details > summary {
+    @apply cursor-pointer list-none select-none;
+  }
+  details > summary:focus {
+    @apply outline-none;
+  }
+  details > summary::-webkit-details-marker {
+    @apply hidden;
+  }
   .dropdown-content {
     @apply absolute left-0 w-full bg-white text-center shadow text-sm flex flex-col z-10 font-bold hidden top-0;
   }
@@ -50,5 +62,14 @@
   }
   .md-content > * ~ * {
     @apply mt-6;
+  }
+  .md-content h2 {
+    @apply font-extrabold text-2xl text-pink;
+  }
+  .md-content h3 {
+    @apply font-bold text-xl text-pink;
+  }
+  .md-content a {
+    @apply underline text-purple font-bold;
   }
 }

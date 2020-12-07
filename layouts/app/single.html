@@ -4,7 +4,21 @@
     <span class="text-xl lg:text-3xl font-bold">Explorador de</span>
     <span class="block">{{ .Params.subtitle }}</span>
   </h1>
-  <div class="max-w-lg text-center mx-auto mt-6">{{.Description}}</div>
+  <div class="max-w-lg text-center mx-auto mt-6">
+    <div class="text-center">
+      {{.Description}}
+    </div>
+    {{ if .Content }}
+    <details class="mt-6">
+      <summary class="uppercase bg-pink text-white rounded font-bold text-sm px-3 py-2 inline-block">
+        Cómo se usa
+      </summary>
+      <div class="text-left mt-6 md-content">
+        {{ .Content }}
+      </div>
+    </details>
+    {{ end }}
+  </div>
   <div class="h-screen mt-4">
     <iframe class="w-full h-full" src="{{.Params.app}}" frameborder="0"></iframe>
   </div>
