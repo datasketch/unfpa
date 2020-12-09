@@ -21,6 +21,8 @@
       {{ block "main" . }} {{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ $site := resources.Get "js/site.js" | minify }}
+    <script src="{{$site.Permalink}}"></script>
     {{ block "scripts" . }}{{ end }}
   </body>
 </html>

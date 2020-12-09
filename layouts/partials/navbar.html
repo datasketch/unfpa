@@ -1,11 +1,11 @@
-<nav class="bg-cultured p-4 z-20 flex justify-between items-center">
+<nav class="bg-cultured p-4 z-20 flex flex-col lg:flex-row lg:justify-between lg:items-center">
   <!---->
   <div class="w-full flex items-center justify-between lg:w-auto">
     <a href="{{ .Site.BaseURL }}" class="flex items-baseline space-x-3">
       <img class="w-32" src="{{"images/taboo.png"|absURL}}" alt="">
       <img src="{{"images/unfpa.svg"|absURL}}" alt="">
     </a>
-    <button class="lg:hidden">
+    <button class="lg:hidden" id="toggle-button">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <line x1="4" y1="6" x2="20" y2="6" />
@@ -14,7 +14,7 @@
       </svg>
     </button>
   </div>
-  <div class="hidden font-bold lg:flex lg:flex-row lg:space-x-6">
+  <div id="menu-links" class="font-bold hidden flex-col py-4 lg:flex lg:flex-row lg:space-x-6">
     {{ range .Site.Pages }}
       <a href="{{.Permalink}}" class="hover:text-pink">{{.Title}}</a>
     {{ end }}
