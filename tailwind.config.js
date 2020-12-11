@@ -10,6 +10,7 @@ module.exports = {
         mnblue: '#3e5588',
         raisin: '#2a2e3a',
         cultured: '#f5f5f5',
+        verdigris: '#46ADB5',
         'max-purple': '#882E89'
       },
       fontFamily: {

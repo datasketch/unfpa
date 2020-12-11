@@ -60,6 +60,16 @@
   .swiper-pagination-bullet.swiper-pagination-bullet-active.custom-bullet {
     background: #3e5588;
   }
+  .swiper-container .swiper-button-prev,
+  .swiper-container .swiper-button-next {
+    @apply opacity-100 text-transparent bg-center bg-no-repeat bg-contain cursor-pointer;
+  }
+  .swiper-button-prev {
+    background-image: url(../icons/to-left.svg);
+  }
+  .swiper-button-next {
+    background-image: url(../icons/to-right.svg);
+  }
   .md-content > * ~ * {
     @apply mt-6;
   }
