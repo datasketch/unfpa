@@ -4,3 +4,7 @@ title = "UNFPA"
 taxonomies = []
 publishDir = "docs"
 
+[params]
+  title = "Los anticonceptivos son confiables, los mitos no"
+  description = "La información sobre los métodos anticonceptivos es clave. Sin embargo, aún persisten enormes dificultades y barreras de información que se afianzan sobre los métodos de anticoncepción."
+  images = ["images/postday.png"]

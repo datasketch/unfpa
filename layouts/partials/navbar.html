@@ -16,7 +16,9 @@
   </div>
   <div id="menu-links" class="font-bold hidden flex-col py-4 lg:flex lg:flex-row lg:space-x-6">
     {{ range .Site.Pages }}
-      <a href="{{.Permalink}}" class="hover:text-pink">{{.Title}}</a>
+      <a href="{{.Permalink}}" class="hover:text-pink">
+        {{ or .Params.label .Title }}
+      </a>
     {{ end }}
   </div>
 </nav>
