@@ -1,23 +1,27 @@
 {{ define "main" }}
 <div class="px-4 py-24">
   <div class="w-full mx-auto lg:w-10/12 relative">
-    <img src="{{"gifs/postday.gif"|absURL}}" alt="" class="w-full relative md:absolute md:top-0 md:right-0 md:w-1/2">
-    <div class="w-full lg:w-2/3 flex-shrink-0 relative">
-      <div class="text-4xl lg:text-6xl font-extrabold">
-        <h1 class="text-mnblue leading-tight">Los anticonceptivos son confiables.</h1>
-        <h1 class="text-pink leading-tight">Los mitos no.</h1>
+    <div class="flex flex-col-reverse md:flex-row md:items-start">
+      <div class="w-full md:w-3/5 lg:w-7/12 flex-shrink-0 relative">
+        <div class="text-4xl lg:text-6xl font-extrabold">
+          <h1 class="text-mnblue leading-tight">Los anticonceptivos son confiables.</h1>
+          <h1 class="text-pink leading-tight">Los mitos no.</h1>
+        </div>
+        <div class="max-w-lg mt-6 leading-7">
+          <p>
+            Los derechos sexuales y reproductivos son derechos humanos. Así ha sido establecido y ratificado desde los años 90 a partir de las Conferencias Mundiales del Cairo sobre Población y Desarrollo y de Beijing sobre la Mujer, y en conferencias posteriores de seguimiento.
+          </p>
+          <p class="mt-6">
+            Uno de los derechos sexuales y reproductivos de mayor relevancia es contar con información clara y veraz para tomar decisiones adecuadas sobre la sexualidad y la reproducción de manera libre y responsable. 
+          </p>
+          <p class="mt-6">
+            En particular, la información sobre los métodos anticonceptivos es clave. Sin embargo, aún persisten enormes dificultades y barreras de información que se afianzan sobre los métodos de anticoncepción. Al respecto, han surgido mitos en torno a la efectividad de los métodos modernos o a sus efectos sobre el cuerpo, así como, a la utilidad de métodos no científicos (mal llamados "caseros") de anticoncepción o de interrupción del embarazo.
+          </p>
+          <a class="mt-8 inline-block bg-pink text-white font-bold px-3 py-1 rounded text-xl" target="_blank" href="https://colombia.unfpa.org/es/publications/derechos-sexuales-y-derechos-reproductivos-infograf%C3%ADa">Conoce tus derechos</a>
+        </div>
       </div>
-      <div class="max-w-md mt-6 space-y-4">
-        <p>
-          Los derechos sexuales y reproductivos son derechos humanos. Así ha sido establecido y ratificado desde los años 90 a partir de las Conferencias Mundiales del Cairo sobre Población y Desarrollo y de Beijing sobre la Mujer, y en conferencias posteriores de seguimiento.
-        </p>
-        <p>
-          Uno de los derechos sexuales y reproductivos de mayor relevancia es contar con información clara y veraz para tomar decisiones adecuadas sobre la sexualidad y la reproducción de manera libre y responsable. 
-        </p>
-        <p>
-          En particular, la información sobre los métodos anticonceptivos es clave. Sin embargo, aún persisten enormes dificultades y barreras de información que se afianzan sobre los métodos de anticoncepción. Al respecto, han surgido mitos en torno a la efectividad de los métodos modernos o a sus efectos sobre el cuerpo, así como, a la utilidad de métodos no científicos (mal llamados "caseros") de anticoncepción o de interrupción del embarazo.
-        </p>
-        <a class="mt-6 inline-block bg-pink text-white text-lg font-bold px-3 py-1 rounded text-xl" href="https://colombia.unfpa.org/es/publications/derechos-sexuales-y-derechos-reproductivos-infograf%C3%ADa">Conoce tus derechos</a>
+      <div class="w-full md:w-2/5 lg:w-5/12">
+        <img src="{{"gifs/postday.gif"|absURL}}" alt="">
       </div>
     </div>
   </div>
@@ -51,7 +55,7 @@
         Explora los trinos sobre Salud Sexual y Reproductiva publicados en esta red social e identificados por UNFPA.
       </p>
       <p class="text-center mt-6">
-        <a href="{{ relref . "explorador-de-tweets.md" }}" class="inline-block bg-white text-mnblue text-lg font-bold px-3 py-1 rounded lg:text-xl">Explorar</a>
+        <a href="{{ relref . "explorador-de-tweets.md" }}" target="_blank" class="inline-block bg-white text-mnblue text-lg font-bold px-3 py-1 rounded lg:text-xl">Explorar</a>
       </p>
     </div>
   </div>
@@ -65,7 +69,7 @@
         Explora la selección de temas que hemos identificado en torno a posibles mitos sobre anticoncepción y otras categorías que se pueden relacionar con dichos temas.
       </p>
       <p class="text-center mt-6">
-        <a href="{{ relref . "explorador-de-temas.md" }}" class="inline-block bg-white text-pink text-lg font-bold px-3 py-1 rounded lg:text-xl">Explorar</a>
+        <a href="{{ relref . "explorador-de-temas.md" }}" target="_blank" class="inline-block bg-white text-pink text-lg font-bold px-3 py-1 rounded lg:text-xl">Explorar</a>
       </p>
     </div>
   </div>
@@ -77,7 +81,7 @@
       </h2>
       <p class="mt-4">Conoce cómo surgió esta iniciativa liderada por el equipo de innovación de UNFPA Colombia que cuenta con más de un año de trabajo. </p>
       <p class="text-center mt-6">
-        <a href="{{ relref . "sobre-el-proyecto.md" }}" class="inline-block bg-white text-purple text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
+        <a href="{{ relref . "sobre-el-proyecto.md" }}" target="_blank" class="inline-block bg-white text-purple text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
       </p>
     </div>
   </div>
@@ -91,7 +95,7 @@
         En esta sección se resumen los retos de los datos sobre mitos de anticoncepción y se realiza una metodología para la recolección de la misma.
       </p>
       <p class="text-center mt-6">
-        <a href="{{ relref . "metodologia.md" }}" class="inline-block bg-white text-max-purple text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
+        <a href="{{ relref . "metodologia.md" }}" target="_blank" class="inline-block bg-white text-max-purple text-lg font-bold px-3 py-1 rounded lg:text-xl">Conocer</a>
       </p>
     </div>
   </div>
